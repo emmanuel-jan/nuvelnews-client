@@ -1,0 +1,46 @@
+<nav class="navbar navbar-dark bg-danger">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-1 h1"><i class="fab fa-neos"></i>&nbsp;NuvelNews</span>
+    </div>
+</nav>
+
+<main class="container">
+    <br><br>
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <div class="card mt-5" style="border-radius: 20px; padding: 10px; box-shadow: 5px 10px 18px;">
+                <div class="card-header bg-danger">
+                    <h3 class="display-5 text-white text-center"><i class="fas fa-user-plus"></i>&nbsp;Register Here</h3>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" placeholder="Enter Your Full Name" class="form-control">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="email" placeholder="Enter  Your Email" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="password" placeholder="Enter Your Password" class="form-control">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="password" placeholder="Confirm Your Password" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <button class="btn btn-outline-danger">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer bg-danger">
+                    <a href="" [routerLink] = "['/login']" class="text-white">Login Here</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<app-footer></app-footer>
