@@ -59,41 +59,19 @@
       </div>
       
       <div class="row">
-        <div class="col-md-4 mt-5">
+        
+        <div class="col-md-4 mt-5" *ngFor = "let newsitem of newsitems">
           <div class="card border-light text-white text-center" style="background-color: transparent; border: none;">
-            <img src="../../assets/image/pic3.jpg" height="500" style="border-radius: 30px; filter: brightness(50%);" class="card-img" alt="">
+            <img src="../../assets/image/{{newsitem.newsPicture}}" height="500" style="border-radius: 30px; filter: brightness(50%);" class="card-img" alt="">
             <div class="card-img-overlay">
-              <span class="badge bg-danger mb-5">Business</span>
-              <h5 class="display-4 fst-italic"> This is the news title</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A ratione tenetu....</p>
+              <span class="badge bg-danger mb-5">{{newsitem.newsCategory}}</span>
+              <h5 class="display-4 fst-italic">{{newsitem.newsTitle}}</h5>
+              <p class="card-text">{{newsitem.newsArticle | slice:0:130}}...</p>
               <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
             </div>
           </div>
         </div>
 
-        <div class="col-md-4 mt-5">
-          <div class="card border-light text-white text-center" style="background-color: transparent; border: none;">
-            <img src="../../assets/image/pic4.jpg" height="500" style="border-radius: 30px; filter: brightness(50%);" class="card-img" alt="">
-            <div class="card-img-overlay">
-              <span class="badge bg-success mb-5">Technology</span>
-              <h5 class="display-4 fst-italic"> This is the news title</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A ratione tenetu....</p>
-              <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 mt-5">
-          <div class="card text-white text-center" style="background-color: transparent; border: none;">
-            <img src="../../assets/image/pic5.jpg" height="500" style="border-radius: 30px; filter: brightness(50%);" class="card-img" alt="">
-            <div class="card-img-overlay">
-              <span class="badge bg-dark mb-5">Sports</span>
-              <h5 class="display-4 fst-italic"> This is the news title</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A ratione tenetu....</p>
-              <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
-            </div>
-          </div>
-        </div>
       </div>
 
       <div class="row">

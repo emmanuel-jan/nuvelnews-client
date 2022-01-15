@@ -1,0 +1,26 @@
+news-item{
+    image
+    date-time
+    author
+    title
+    category
+    article
+    comments
+    email
+}
+
+User(Journalist){
+    name
+    *image
+    posts[]
+    password
+    email
+    user-category
+}
+
+Comment{
+    name
+    email
+    comment-body
+    date-time
+}
